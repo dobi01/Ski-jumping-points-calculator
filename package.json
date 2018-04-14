@@ -1,0 +1,24 @@
+{
+  "name": "ski-jumping-points-calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha calculateStyleNotes.test.js",
+    "test:watch": "onchange \"./*.js\" -- npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dobi01/Ski-jumping-points-calculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dobi01/Ski-jumping-points-calculator/issues"
+  },
+  "homepage": "https://github.com/dobi01/Ski-jumping-points-calculator#readme",
+  "devDependencies": {
+    "mocha": "^5.1.0",
+    "onchange": "^3.3.0"
+  }
+}
