@@ -44,7 +44,7 @@ describe('calculateStyleNotes', () => {
 		assert.equal(actual, expected);
 	});
 
-	it('should return sum of notes without the lowest and highest: when the sum is floating point number', () => {
+	it('should return sum of notes without the lowest and highest: when the sum is a floating point number', () => {
 		const actual = calculateStyleNotes([18, 18, 17.5, 18.5, 18.5]);
 
 		const expected = 54.5;
@@ -54,11 +54,10 @@ describe('calculateStyleNotes', () => {
 
 
 	it('should return error if wrong value passed', () => {
-		const actual = calculateStyleNotes(["a", 18.5, 17.5, 18.5, 18.5]);
+		const actual = calculateStyleNotes(['a', 18.5, 17.5, 18.5, 18.5]);
 
 		const expected = `Error: Wrong value passed. Check if array of notes consists solely of numbers`;
 
 		assert.equal(actual, expected);
 	});
-	
 });
