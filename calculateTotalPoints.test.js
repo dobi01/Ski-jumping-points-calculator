@@ -12,7 +12,7 @@ describe('calculateTotalPoints', () => {
 		assert.equal(actual, expected);
   });
   
-  it('should return sum when gateFactor and windFactor are negative floating numbers', () => {
+  it('should return sum when windFactor is negative floating number', () => {
 		const actual = calculateTotalPoints(106.5, 'normal', 98, [18.5, 18.5, 18.5, 19.0, 19.0], -13.5, 6.4);
 
 		const expected = 125.9;
